@@ -9,10 +9,10 @@ body {
   font-size: 15px;
   font-size: 15px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 nav {
-  z-index: 1000;
   display: flex;
 }
 nav .navbar-title {
@@ -61,6 +61,7 @@ nav .navbar-about li > ul {
   border-radius: 5px;
   height: 150px;
   width: 150px;
+  z-index: 5;
 }
 nav .navbar-about li:hover ul {
   display: block;
@@ -333,4 +334,41 @@ nav .navbar-about li:hover ul {
   color: #504f4f;
   font-size: 42px;
   margin: 20px;
+}
+
+footer {
+  position: relative;
+  top: 250px;
+  background-color: #0a0a0a;
+  color: #797777;
+}
+footer li {
+  list-style: none;
+  color: green;
+  padding: 0;
+}
+footer li:hover {
+  color: white;
+}
+footer .footer-div {
+  margin-top: 50px;
+}
+footer .footer-div p {
+  width: 350px;
+}
+footer .bitseydi {
+  display: flex;
+  justify-content: space-between;
+}
+footer button {
+  background-color: green;
+  width: 80px;
+  height: 50px;
+  color: white;
+  position: relative;
+  top: 30px;
+}
+footer input {
+  height: 50px;
+  width: 280px;
 }/*# sourceMappingURL=main.css.map */
