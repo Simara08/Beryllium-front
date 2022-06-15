@@ -8,9 +8,70 @@ body {
 nav {
   display: flex;
 }
+nav .navbar-title {
+  text-align: center;
+}
+nav h1 {
+  margin-top: 30px;
+  margin-left: 20px;
+}
 nav .navbar-about {
   display: flex;
-  margin: 0 0 20px 50px;
+  margin: 20px 0 20px 50px;
   position: absolute;
-  right: 220px;
+  right: 180px;
+  text-align: center;
+}
+nav .navbar-about > ul {
+  margin-top: 30px;
+  margin-left: 20px;
+  position: relative;
+  list-style-type: none;
+}
+nav .navbar-about li {
+  color: rgb(99, 100, 101);
+  transition: 1s;
+}
+nav .navbar-about li:hover {
+  color: black;
+  cursor: pointer;
+}
+nav .navbar-about li:hover li {
+  color: white;
+}
+nav .navbar-about li > ul {
+  text-align: left;
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  transition: height 4s;
+  background-color: black;
+  padding: 0;
+  border-radius: 5px;
+  height: 120px;
+  width: 150px;
+}
+nav .navbar-about li:hover ul {
+  display: block;
+  transition: 3s;
+  -webkit-animation: drop 1s forwards;
+          animation: drop 1s forwards;
+}
+
+@-webkit-keyframes drop {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 120px;
+  }
+}
+
+@keyframes drop {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 120px;
+  }
 }/*# sourceMappingURL=main.css.map */

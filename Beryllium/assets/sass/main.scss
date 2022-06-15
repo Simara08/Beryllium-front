@@ -5,10 +5,71 @@ body{
 }
 nav{
     display: flex;
+    .navbar-title{
+        text-align: center; 
+    }
+    h1{
+        margin-top: 30px;
+         margin-left: 20px;
+    }
     .navbar-about{
         display: flex;
-        margin: 0 0 20px 50px ;
+        margin: 20px 0 20px 50px ;
         position: absolute;
-        right: 220px;
+        right: 180px;
+        text-align: center;
+       
+        >ul{
+            margin-top: 30px;
+            margin-left: 20px;
+            position: relative;
+            list-style-type:none;
+        }
+        li{
+            color: rgb(99, 100, 101);
+            transition: 1s;
+           
+            
+            &:hover{
+                color: black;
+                cursor: pointer;
+                li{
+                    color: white;
+                }
+            }
+           
+        >ul{
+            text-align: left;
+            display: none;
+            position: absolute;
+            list-style-type:none;
+            transition:  height 4s;
+            background-color: black;
+            padding: 0;
+            border-radius: 5px;
+            height: 120px;
+            width: 150px;
+            
+        }
+        &:hover
+        
+         ul{
+            display: block;
+            transition:3s;
+            animation: drop 1s forwards;
+            
+        }
+     }
+       
     }
 }
+
+ @keyframes drop {
+	        from {
+	        	max-height: 0;
+	                }
+
+	        to {
+	        	max-height: 120px;
+	            }
+            }
