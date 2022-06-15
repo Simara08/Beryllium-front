@@ -3,4 +3,14 @@ body {
   font-size: 15px;
   font-size: 15px;
   font-weight: 400;
+}
+
+nav {
+  display: flex;
+}
+nav .navbar-about {
+  display: flex;
+  margin: 0 0 20px 50px;
+  position: absolute;
+  right: 220px;
 }/*# sourceMappingURL=main.css.map */
