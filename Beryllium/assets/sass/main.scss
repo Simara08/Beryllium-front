@@ -10,7 +10,7 @@ nav{
     }
     h1{
         margin-top: 30px;
-         margin-left: 20px;
+         margin-left: 40px;
     }
     .navbar-about{
         display: flex;
@@ -18,6 +18,13 @@ nav{
         position: absolute;
         right: 180px;
         text-align: center;
+        >ul>li>ul>li{
+            margin-top: 13px;
+            &:hover {
+                color: white;
+            
+        }
+    }
        
         >ul{
             margin-top: 30px;
@@ -26,6 +33,7 @@ nav{
             list-style-type:none;
         }
         li{
+
             color: rgb(99, 100, 101);
             transition: 1s;
            
@@ -33,9 +41,6 @@ nav{
             &:hover{
                 color: black;
                 cursor: pointer;
-                li{
-                    color: white;
-                }
             }
            
         >ul{
@@ -47,11 +52,10 @@ nav{
             background-color: black;
             padding: 0;
             border-radius: 5px;
-            height: 120px;
+            height: 150px;
             width: 150px;
-            
         }
-        &:hover
+        &:hover{
         
          ul{
             display: block;
@@ -60,9 +64,13 @@ nav{
             
         }
      }
-       
     }
+       
 }
+
+}
+
+
 
  @keyframes drop {
 	        from {
@@ -70,6 +78,6 @@ nav{
 	                }
 
 	        to {
-	        	max-height: 120px;
+	        	max-height: 150px;
 	            }
-            }
+ }
